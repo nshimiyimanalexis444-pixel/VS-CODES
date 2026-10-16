@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Create your Project Hub student account to manage your academic projects and progress.">
+    <title>Create your account | Project Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo-section">
+            <img class="project-image" src="image1.png" alt="Project Hub">
+            <h2>Project Hub</h2>
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+            <ul class="list-nav">
+                <li><a class="link-nav" href="index.html">HOME</a></li>
+                <li><a class="link-nav" href="about.html">ABOUT</a></li>
+                <li><a class="link-nav" href="project.html">PROJECT</a></li>
+                <li><a class="link-nav" href="register.html">REGISTER</a></li>
+                <li><a class="link-nav" href="student-dashboard.html">STUDENT DASHBOARD</a></li>
+                <li><a class="link-nav" href="supervisor-dashboard.html">SUPERVISOR DASHBOARD</a></li>
+                <li><a class="link-nav" href="contact.html">CONTACT</a></li>
+                <li><a class="link-nav" href="login.html">LOGIN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-shell register-shell">
+        <section class="register-intro" aria-labelledby="register-title">
+            <p class="eyebrow">Get started</p>
+            <h1 id="register-title">Your next great project starts here.</h1>
+            <p class="register-intro-copy">
+                Create your student account to organize your project work, connect with your supervisor,
+                and keep your progress moving forward.
+            </p>
+            <ul class="register-benefits">
+                <li>Keep project details and milestones in one place</li>
+                <li>Stay connected with your academic supervisor</li>
+                <li>Track progress from proposal to completion</li>
+            </ul>
+            <p class="register-sign-in">Already have an account? <a href="login.html">Sign in</a></p>
+        </section>
+
+        <section class="form-card registration-card" aria-labelledby="form-title">
+            <div class="registration-heading">
+                <h2 id="form-title">Create your account</h2>
+                <p>Enter your details below to get started.</p>
+            </div>
+            <form class="form-grid" autocomplete="on">
+                <div class="form-row">
+                    <div>
+                        <label for="full-name">Full Name</label>
+                        <input type="text" id="full-name" name="full-name" placeholder="e.g. Alex Morgan" autocomplete="name" minlength="2" required>
+                    </div>
+                    <div>
+                        <label for="student-id">Student ID</label>
+                        <input type="text" id="student-id" name="student-id" placeholder="Enter your student ID" inputmode="numeric" pattern="[0-9]{1,16}" maxlength="16" autocomplete="off" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+                    </div>
+                    <div>
+                        <label for="program">Program</label>
+                        <select id="program" name="program" required>
+                            <option value="" selected disabled>Select your program</option>
+                            <option value="Computer Science">Computer Science</option>
+                            <option value="Information Technology">Information Technology</option>
+                            <option value="Software Engineering">Software Engineering</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="At least 6 characters" autocomplete="new-password" minlength="6" required>
+                    </div>
+                    <div>
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" name="confirm-password" placeholder="Re-enter your password" autocomplete="new-password" minlength="6" required>
+                    </div>
+                </div>
+
+                <p class="password-hint">Use at least 6 characters for your password.</p>
+                <button class="action-btn" type="submit">Create account</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

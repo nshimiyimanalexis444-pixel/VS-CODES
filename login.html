@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Login to your Project Hub account to manage student projects and academic tasks.">
+    <title>Login | Project Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo-section">
+            <img class="project-image" src="image1.png" alt="Project Hub logo">
+            <h2>Project Hub</h2>
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+            <ul class="list-nav">
+                <li><a class="link-nav" href="index.html">HOME</a></li>
+                <li><a class="link-nav" href="about.html">ABOUT</a></li>
+                <li><a class="link-nav" href="project.html">PROJECT</a></li>
+                <li><a class="link-nav" href="register.html">REGISTER</a></li>
+                <li><a class="link-nav" href="student-dashboard.html">STUDENT DASHBOARD</a></li>
+                <li><a class="link-nav" href="supervisor-dashboard.html">SUPERVISOR DASHBOARD</a></li>
+                <li><a class="link-nav" href="contact.html">CONTACT</a></li>
+                <li><a class="link-nav" href="login.html">LOGIN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-shell">
+        <header class="page-header">
+            <h1>Login</h1>
+        </header>
+
+        <section class="form-card login-card" aria-labelledby="login-title">
+            <div class="registration-heading">
+                <h2 id="login-title">Welcome back</h2>
+                <p>Access your dashboard and continue your project work.</p>
+            </div>
+            <form class="form-grid" autocomplete="on">
+                <div>
+                    <label for="email-login">Email</label>
+                    <input type="email" id="email-login" name="email-login" placeholder="you@gmail.com" autocomplete="email" required>
+                </div>
+                <div>
+                    <label for="password-login">Password</label>
+                    <input type="password" id="password-login" name="password-login" placeholder="Enter your password" autocomplete="current-password" required>
+                </div>
+                <button class="action-btn" type="submit">Login</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

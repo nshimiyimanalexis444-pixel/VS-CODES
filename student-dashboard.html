@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Student dashboard for tracking project status, milestones, and supervisor feedback.">
+    <title>Student Dashboard | Project Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo-section">
+            <img class="project-image" src="image1.png" alt="Project Hub logo">
+            <h2>Project Hub</h2>
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+            <ul class="list-nav">
+                <li><a class="link-nav" href="index.html">HOME</a></li>
+                <li><a class="link-nav" href="about.html">ABOUT</a></li>
+                <li><a class="link-nav" href="project.html">PROJECT</a></li>
+                <li><a class="link-nav" href="register.html">REGISTER</a></li>
+                <li><a class="link-nav" href="student-dashboard.html">STUDENT DASHBOARD</a></li>
+                <li><a class="link-nav" href="supervisor-dashboard.html">SUPERVISOR DASHBOARD</a></li>
+                <li><a class="link-nav" href="contact.html">CONTACT</a></li>
+                <li><a class="link-nav" href="login.html">LOGIN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-shell">
+        <header class="page-header">
+            <h1>Student Dashboard</h1>
+        </header>
+
+        <section class="dashboard-grid">
+            <article class="dashboard-card">
+                <h3>Profile</h3>
+                <p><strong>Name:</strong> Jane Doe</p>
+                <p><strong>Program:</strong> Computer Science</p>
+                <p><strong>Year:</strong> 3rd Year</p>
+            </article>
+
+            <article class="dashboard-card">
+                <h3>Current Project</h3>
+                <p>Student Management Portal</p>
+                <span class="badge review">In Review</span>
+            </article>
+
+            <article class="dashboard-card">
+                <h3>Supervisor</h3>
+                <p>Dr. Michael James</p>
+                <p>Project Adviser</p>
+            </article>
+        </section>
+
+        <section class="info-card" style="margin-top: 24px;">
+            <h3>Project Status</h3>
+            <table class="summary-table">
+                <thead>
+                    <tr>
+                        <th>Task</th>
+                        <th>Status</th>
+                        <th>Deadline</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Proposal Submission</td>
+                        <td><span class="badge approved">Approved</span></td>
+                        <td>12 Sep</td>
+                    </tr>
+                    <tr>
+                        <td>Progress Report</td>
+                        <td><span class="badge pending">Pending</span></td>
+                        <td>22 Sep</td>
+                    </tr>
+                    <tr>
+                        <td>Final Presentation</td>
+                        <td><span class="badge review">Scheduled</span></td>
+                        <td>30 Sep</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
